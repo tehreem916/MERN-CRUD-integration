@@ -8,7 +8,7 @@ const app = express()
 const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/crud'
 const port = process.env.PORT || 3001
 
-app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:5173' }))
+app.use(cors({ origin: process.env.CLIENT_URL || 'https://mern-crud-integration-6.onrender.com' }))
 app.use(express.json())
 
 mongoose.connect(mongoURI)
